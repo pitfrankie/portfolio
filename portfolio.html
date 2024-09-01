@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="m.css">
+</head> 
+<body>
+    <div class="topnav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contacts</a></li>
+            <li><button id="dark-change" class="dark-mode-toggle"></button></li>
+        </ul> 
+    </div>
+    <div class="home" id="home">
+        <div class="box">
+            <img src="440915890_331061913097001_723184683305282825_n (1).jpg" alt="Profile Picture">
+            <h1>Hello! My name is Pit Frankie B. Ceniza</h1>
+            <h2>2nd year BSIT student</h2>
+        </div>
+    </div>
+    <div class="about" id="about">  
+        <h2>This is a simple activity to create a portfolio</h2>  
+        <p>I am excited to see what will happen in this subject!</p>
+    </div>
+    <div class="contact" id="contact">
+        <h3>Contact:</h3>
+        <h3><strong>Gmail: </strong>pitfrankie.ceniza@hcdc.edu.ph</h3>
+        <h3><strong>Number: </strong>#09757410546</h3>
+    </div>
+
+    <script>
+        var content = document.body;
+        var darkModeButton = document.getElementById('dark-change');
+        darkModeButton.addEventListener('click', function() {
+            darkModeButton.classList.toggle('active');
+            content.classList.toggle('night');
+        });
+    </script>
+</body>
+</html>
